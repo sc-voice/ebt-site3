@@ -1,12 +1,12 @@
 const EbtConfig = {
-  "appName": "www.sc-voice.net",
+  "appName": "sc-voice.net",
   "basePath": "/",
   "homePath": "#/wiki/welcome",
   "content": {
     "index": "toc",
   },
   "github": {
-    "account": "ebt-site",
+    "account": "sc-voice",
     "repository": "ebt-site3"
   }
 }
