@@ -14,19 +14,26 @@ This is the site template for
 applications.
 
 To create your own EBT-Vue3 website, you'll need a
-[Github account](ihttps://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account). A free account is fine.
+[Github account](ihttps://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account) (Note: a free account is fine).
+
+### Create new repository
 
 1. Login to Github and navigate to 
 [sc-voice/ebt-vue3](https://github.com/sc-voice/ebt-site3).
 1. Then click the <kbd>Use this template</kbd>
 button, and choose <kbd>Create new repository</kbd>.
+
 <img src="https://ebt-site.sc-voice.net/img/use-this-template.png" />. 
-This will open a new webpage form.
+
+This will open a new webpage form for you to fill out:
+
 1. Specify the new repository name (e.g., "my-ebt-site")
 1. Choose <kbd>Public</kbd> repository (free)
 1. Select <kbd>Include all branches</kbd>
 1. Review your form entries
 1. When ready, click ```Create repository from template```
+
+We now need to enable Github pages for your new repository.
 
 ### Enable Github pages
 
@@ -43,4 +50,19 @@ Follow the link to see your new website
 
 Also see [Customize](/${baseName}/#/wiki/dev/customize} 
 for customizing content.
+
+### Custom domains
+
+Github supports [custom domains](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site).
+
+The default URLs for Github pages are quite long 
+(e.g., https://sc-voice.github.io/ebt-site3),
+so it may be worth the time and effort to have your own custom domain name
+(e.g., https://sc-voice.net)
+
+To get a custom domain name,
+you'll need to subscribe to a domain provider
+for a nominal fee.
+For example, SC-Voice uses [Google Domains](https://domains.google/))
+for the ```sc-voice.net``` internet domain name.
 
