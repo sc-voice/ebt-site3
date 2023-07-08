@@ -25,7 +25,11 @@ button, and choose <kbd>Create new repository</kbd>.
 
 <img src="https://ebt-site.sc-voice.net/img/use-this-template.png" />. 
 
-This will open a new webpage form for you to fill out:
+
+### Configure new repository
+
+After clciking <kbd>Create new repository</kbd>,
+you'll see a new webpage form for you to fill out:
 
 1. Specify the new repository name (e.g., "my-ebt-site")
 1. Choose <kbd>Public</kbd> repository (free)
@@ -39,13 +43,15 @@ We now need to enable Github pages for your new repository.
 
 Navigate to your new repository and click <kbd>Settings</kbd>.
 Then click the "Pages" link in the left navigation bar.
-Configure the ```Build and deployment" settings as shown below:
+Configure the ```Build and deployment``` settings as shown below:
 
-<img src="https://ebt-site.sc-voice.net/img/github-pages.png" />. 
+<a href=="https://ebt-site.sc-voice.net/img/github-pages.png">
+<img src="https://ebt-site.sc-voice.net/img/github-pages.png" style="width:35em">
+</img>
+</a>. 
 
 Once properly configured, you should see a link to your new website
 (e.g., ```https://my-account.github.io/my-ebt-site").
-
 Follow the link to see your new website
 
 Also see [Customize](/${baseName}/#/wiki/dev/customize} 
@@ -55,14 +61,22 @@ for customizing content.
 
 Github supports [custom domains](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site).
 
-The default URLs for Github pages are quite long 
-(e.g., https://sc-voice.github.io/ebt-site3),
-so it may be worth the time and effort to have your own custom domain name
-(e.g., https://sc-voice.net)
+The default URLs for Github pages are quite long. E.g.:
+
+```
+https://sc-voice.github.io/ebt-site3
+```
+
+It may therefore be worth the time and effort to have your own custom domain name.
+E.g.:
+
+```
+https://sc-voice.net
+```
 
 To get a custom domain name,
 you'll need to subscribe to a domain provider
 for a nominal fee.
-For example, SC-Voice uses [Google Domains](https://domains.google/))
+For example, SC-Voice uses [Google Domains](https://domains.google/)
 for the ```sc-voice.net``` internet domain name.
 
