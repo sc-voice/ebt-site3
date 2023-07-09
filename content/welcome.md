@@ -27,7 +27,7 @@ button, and choose <kbd>Create new repository</kbd>.
 
 ### Configure new repository
 
-After clciking <kbd>Create new repository</kbd>,
+After clicking <kbd>Create new repository</kbd>,
 you'll see a new webpage form for you to fill out:
 
 1. Specify the new repository name (e.g., "my-ebt-site")
@@ -44,7 +44,7 @@ Navigate to your new repository and click <kbd>Settings</kbd>.
 Then click the "Pages" link in the left navigation bar.
 Configure the ```Build and deployment``` settings as shown below:
 
-<a href=="https://ebt-site.sc-voice.net/img/github-pages.png">
+<a href="https://ebt-site.sc-voice.net/img/github-pages.png">
 <img src="https://ebt-site.sc-voice.net/img/github-pages.png" style="width:35em">
 </img>
 </a>. 
