@@ -19,7 +19,7 @@ To create your own EBT-Vue3 website, you'll need a
 ### Create new repository
 
 1. Login to Github and navigate to 
-[sc-voice/ebt-vue3](https://github.com/sc-voice/ebt-site3).
+[sc-voice/ebt-site3](https://github.com/sc-voice/ebt-site3).
 1. Then click the <kbd>Use this template</kbd>
 button, and choose <kbd>Create new repository</kbd>.
 
