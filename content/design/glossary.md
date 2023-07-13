@@ -1,8 +1,9 @@
 ---
-title: Test Page #1
-description: Test Page #1 description
-img: amanda-flavell-9XSLoMlVhYU-unsplash.png
+title: Glossary
+description: Definitions for terms used in an EBT-Site
+img: brett-jordan-POMpXtcVYHo-unsplash.png
 img-alt: Monk statue surrounded by plants outdoor during day
+link: https://unsplash.com/photos/POMpXtcVYHo
 category: 1. General
 order: 2
 ---

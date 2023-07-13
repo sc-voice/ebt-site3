@@ -45,18 +45,7 @@ Configure the ```Build and deployment``` settings as shown below:
 </img>
 </a>. 
 
-* Edit the [EBT site configuration](#/wiki/design/config)
+Next, you'll need to edit the EBT-Site configuration.
+You won't be able to view your new website until you have configured it correctly.
+See [EBT site configuration](#/wiki/design/config).
 
-Once properly configured, you should see a link to your new website
-(e.g., ```https://my-account.github.io/my-ebt-site").
-Follow the link to see your new website
-
-### See also
-
-* [Edit content](#/wiki/design/edit)
-* [EBT site configuration](#/wiki/design/config)
-* [Markdown content](#/wiki/design/markdown)
-* [Content Channels](#/wiki/design/channel)
-* [Custom domains](#/wiki/design/domain)
-
-Thu Jul 13 09:03:19 AM PDT 2023
