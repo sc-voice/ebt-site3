@@ -1,10 +1,11 @@
 ---
-title: Customize your EBT-Site
-description: Create custom content using Markdown
-img: pexels-philippe-donn-1133957.png
+title: ebt-config
+description: Configure EBT-Site for new repository
+img: faizan-saeed-PPeZwFWnWNE-unsplash.png
 img-alt: Hummingbird reaching to drink nectar from flowers
+link: https://unsplash.com/photos/PPeZwFWnWNE 
 category: 1. General
-order: 1
+order: 2
 ---
 
 ### Customize content

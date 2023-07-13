@@ -1,8 +1,9 @@
 ---
-title: Customize your EBT-Site
+title: Markdown content
 description: Create custom content using Markdown
-img: pexels-philippe-donn-1133957.png
-img-alt: Hummingbird reaching to drink nectar from flowers
+img: sergi-kabrera-2xU7rYxsTiM-unsplash.png
+img-alt: Keyboard
+link: https://unsplash.com/photos/2xU7rYxsTiM
 category: 1. General
 order: 1
 ---

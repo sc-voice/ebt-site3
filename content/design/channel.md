@@ -3,7 +3,7 @@ title: Content channels
 description: Organize your content into channels
 img: pexels-philippe-donn-1133957.png
 img-alt: Hummingbird reaching to drink nectar from flowers
-category: 1. General
+category: Advanced
 order: 1
 ---
 
