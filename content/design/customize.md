@@ -29,7 +29,7 @@ The file '''ebt-config.mjs''' has several properties you will need to change.
 Be sure to use [JSON syntax](https://www.json.org/json-en.html) properly!
 
 | Property | Description |
-| :----: | :----: |
+| ----: | :---- |
 | appName | The site name (e.g., ```EBT-Site```). |
 | basePath | The URL base path for your site. Initially, this should be the Github repository name (e.g., "/ebt-site3/"). If you choose a custom Internet domain, change this to simply "/".
 | github.account | The Github account name (e.g., "sc-voice") 
@@ -59,11 +59,21 @@ For example, here is a channel of related EBT sites:
 
 * [Sites](#/wiki/sites/toc)
 
+Notice that each channel has a ```toc.md``` file.
+
 ### TOC files
 
-EBT-Site automatically generates the table of contents for each channel.
-You can customize a channel's table of contents by adding a ```toc.md``` file.
-EBT-Site will automatically append the 
-channel table of contents to your custom ```toc.md``` file.
+A *TOC file* is a special Markdown file used to generate the table
+of contents for each channel.
+EBT-Site will automatically update the channel table of contents whenever
+you make a change to your wiki.
 
-Wed Jul 12 11:37:08 AM PDT 2023
+When you create a new channel, be sure to add a ```toc.md``` file!
+
+
+### Hidden channels
+It's sometimes convenient to hide a channel while you're working on it.
+To hide a channel from its parent TOC, just remove or rename the ```toc.md``` file
+of that channel.
+
+Thu Jul 13 08:15:40 AM PDT 2023
