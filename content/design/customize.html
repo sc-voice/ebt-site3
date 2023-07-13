@@ -1,0 +1,87 @@
+<article class="ebt-wiki">
+<div class="ebt-wiki-heading">
+  <img src="/img/pexels-philippe-donn-1133957.png" alt="Hummingbird reaching to drink nectar from flowers" title="Hummingbird reaching to drink nectar from flowers"/>
+ <div class="ebt-wiki-heading-text">
+  <div class="ebt-wiki-breadcrumbs">
+   <a href="/#/wiki/toc" >wiki</a>&nbsp;&gt;&nbsp;
+   <a href="/#/wiki/design/toc" >design</a>&nbsp;&gt;&nbsp;
+   customize
+  </div><!--ebt-wiki-breadcrumbs-->
+  <h1>Customize your EBT-Site</h1>
+  <div class="ebt-wiki-description">Create custom content using Markdown</div>
+ </div><!--ebt-wiki-heading-text-->
+</div><!--ebt-wiki-heading-->
+<h3>Customize content</h3>
+<p>Before you can view your website, you'll need to configure it.
+Github allows you to change your website
+<a href="https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files">online</a>.
+Just open your browser and login to Github.</p>
+<p>To customize your website, you'll need to:</p>
+<ol>
+<li>Edit <code>ebt.config.mjs</code> file (see below)</li>
+</ol>
+<p>Once you configure your website properly, you'll be able to view
+it and add your own wiki content.</p>
+<ol>
+<li>Edit the <code>content</code> folder for your new repository as desired.</li>
+</ol>
+<p>##E ebt-config.mjs</p>
+<p>The file '''ebt-config.mjs''' has several properties you will need to change.
+Be sure to use <a href="https://www.json.org/json-en.html">JSON syntax</a> properly!</p>
+<table>
+<thead>
+<tr>
+<th align="center">Property</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">appName</td>
+<td align="center">The site name (e.g., <code>EBT-Site</code>).</td>
+</tr>
+<tr>
+<td align="center">basePath</td>
+<td align="center">The URL base path for your site. Initially, this should be the Github repository name (e.g., &quot;/ebt-site3/&quot;). If you choose a custom Internet domain, change this to simply &quot;/&quot;.</td>
+</tr>
+<tr>
+<td align="center">github.account</td>
+<td align="center">The Github account name (e.g., &quot;sc-voice&quot;)</td>
+</tr>
+<tr>
+<td align="center">github.repository</td>
+<td align="center">The Github repository name (e.g., &quot;ebt-site3&quot;)</td>
+</tr>
+<tr>
+<td align="center">multilingual</td>
+<td align="center">(Optional) The two-letter language ISO code for your site. If specified, the users to your site will not have settings to change the web application language or the EBT translation language.</td>
+</tr>
+<tr>
+<td align="center">content.index</td>
+<td align="center">The file namve for customizing the file name used for category table of contents (e.g., &quot;toc&quot;)</td>
+</tr>
+</tbody>
+</table>
+<p>Commit your changes and verify them by viewing your website.</p>
+<h2>Custom content</h2>
+<p>Customize your EBT-Site by changing the wiki.
+Custom content is located in the <code>content folder</code>.
+Content webpages are generated from
+<a href="https://github.com/skills/communicate-using-markdown">Markdown files</a>.</p>
+<p>For example, this web page is defined by:</p>
+<pre><code>content/welcome.md
+</code></pre>
+<h2>Content channels</h2>
+<p>Organize your Markdown files into sub-folders of related content.
+Each content sub-directory is known as a <em>channel</em>.</p>
+<p>For example, here is a channel of related EBT sites:</p>
+<ul>
+<li><a href="#/wiki/sites/toc">Sites</a></li>
+</ul>
+<h3>TOC files</h3>
+<p>EBT-Site automatically generates the table of contents for each channel.
+You can customize a channel's table of contents by adding a <code>toc.md</code> file.
+EBT-Site will automatically append the
+channel table of contents to your custom <code>toc.md</code> file.</p>
+<p>Wed Jul 12 11:37:08 AM PDT 2023</p>
+</article>
