@@ -1,8 +1,9 @@
 ---
 title: Content channels
 description: Organize your content into channels
-img: pexels-philippe-donn-1133957.png
-img-alt: Hummingbird reaching to drink nectar from flowers
+img: dylan-gillis-KdeqA3aTnBY-unsplash.png
+link: https://unsplash.com/photos/KdeqA3aTnBY
+img-alt: Organization meeting
 category: Advanced
 order: 1
 ---
