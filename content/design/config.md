@@ -29,7 +29,7 @@ The file '''ebt-config.mjs''' has several properties you will need to change.
 Be sure to use [JSON syntax](https://www.json.org/json-en.html) properly!
 
 | Property | Description |
-| ----: | :---- |
+| :---- | :---- |
 | appName | The site name (e.g., ```EBT-Site```). |
 | basePath | The URL base path for your site. Initially, this should be the Github repository name (e.g., "/ebt-site3/"). If you choose a custom Internet domain, change this to simply "/".
 | github.account | The Github account name (e.g., "sc-voice") 

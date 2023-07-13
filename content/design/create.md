@@ -14,12 +14,12 @@ To create your own EBT-Vue3 website, you'll need a
 
 ### Create new repository
 
-1. Login to Github and navigate to <a href=https://github.com/sc-voice/ebt-site3" target="_blank">sc-voice/ebt-site3</a>
+1. Navigate to [sc-voice on Github](https://github.com/sc-voice/ebt-site3)
+1. Login to Github
 1. Then click the <kbd>Use this template</kbd>
 button, and choose <kbd>Create new repository</kbd>.
 
 <img src="https://ebt-site.sc-voice.net/img/use-this-template.png" />. 
-
 
 ### Configure new repository
 
@@ -45,34 +45,18 @@ Configure the ```Build and deployment``` settings as shown below:
 </img>
 </a>. 
 
+* Edit the [EBT site configuration](#/wiki/design/config)
+
 Once properly configured, you should see a link to your new website
 (e.g., ```https://my-account.github.io/my-ebt-site").
 Follow the link to see your new website
 
-Also see [Customize](/${baseName}/#/wiki/dev/customize} 
-for customizing content.
+### See also
 
-### Custom domains
+* [Edit content](#/wiki/design/edit)
+* [EBT site configuration](#/wiki/design/config)
+* [Markdown content](#/wiki/design/markdown)
+* [Content Channels](#/wiki/design/channel)
+* [Custom domains](#/wiki/design/domain)
 
-Github supports [custom domains](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site).
-
-The default URLs for Github pages are quite long. E.g.:
-
-```
-https://sc-voice.github.io/ebt-site3
-```
-
-It may therefore be worth the time and effort to have your own custom domain name.
-E.g.:
-
-```
-https://sc-voice.net
-```
-
-To get a custom domain name,
-you'll need to subscribe to a domain provider
-for a nominal fee.
-For example, SC-Voice uses [Google Domains](https://domains.google/)
-for the ```sc-voice.net``` internet domain name.
-
-Thu Jul 13 06:13:40 AM PDT 2023
+Thu Jul 13 09:03:19 AM PDT 2023
