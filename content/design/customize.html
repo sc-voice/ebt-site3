@@ -31,34 +31,34 @@ Be sure to use <a href="https://www.json.org/json-en.html">JSON syntax</a> prope
 <table>
 <thead>
 <tr>
-<th align="center">Property</th>
-<th align="center">Description</th>
+<th align="right">Property</th>
+<th align="left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">appName</td>
-<td align="center">The site name (e.g., <code>EBT-Site</code>).</td>
+<td align="right">appName</td>
+<td align="left">The site name (e.g., <code>EBT-Site</code>).</td>
 </tr>
 <tr>
-<td align="center">basePath</td>
-<td align="center">The URL base path for your site. Initially, this should be the Github repository name (e.g., &quot;/ebt-site3/&quot;). If you choose a custom Internet domain, change this to simply &quot;/&quot;.</td>
+<td align="right">basePath</td>
+<td align="left">The URL base path for your site. Initially, this should be the Github repository name (e.g., &quot;/ebt-site3/&quot;). If you choose a custom Internet domain, change this to simply &quot;/&quot;.</td>
 </tr>
 <tr>
-<td align="center">github.account</td>
-<td align="center">The Github account name (e.g., &quot;sc-voice&quot;)</td>
+<td align="right">github.account</td>
+<td align="left">The Github account name (e.g., &quot;sc-voice&quot;)</td>
 </tr>
 <tr>
-<td align="center">github.repository</td>
-<td align="center">The Github repository name (e.g., &quot;ebt-site3&quot;)</td>
+<td align="right">github.repository</td>
+<td align="left">The Github repository name (e.g., &quot;ebt-site3&quot;)</td>
 </tr>
 <tr>
-<td align="center">multilingual</td>
-<td align="center">(Optional) The two-letter language ISO code for your site. If specified, the users to your site will not have settings to change the web application language or the EBT translation language.</td>
+<td align="right">multilingual</td>
+<td align="left">(Optional) The two-letter language ISO code for your site. If specified, the users to your site will not have settings to change the web application language or the EBT translation language.</td>
 </tr>
 <tr>
-<td align="center">content.index</td>
-<td align="center">The file namve for customizing the file name used for category table of contents (e.g., &quot;toc&quot;)</td>
+<td align="right">content.index</td>
+<td align="left">The file namve for customizing the file name used for category table of contents (e.g., &quot;toc&quot;)</td>
 </tr>
 </tbody>
 </table>
@@ -78,10 +78,16 @@ Each content sub-directory is known as a <em>channel</em>.</p>
 <ul>
 <li><a href="#/wiki/sites/toc">Sites</a></li>
 </ul>
+<p>Notice that each channel has a <code>toc.md</code> file.</p>
 <h3>TOC files</h3>
-<p>EBT-Site automatically generates the table of contents for each channel.
-You can customize a channel's table of contents by adding a <code>toc.md</code> file.
-EBT-Site will automatically append the
-channel table of contents to your custom <code>toc.md</code> file.</p>
-<p>Wed Jul 12 11:37:08 AM PDT 2023</p>
+<p>A <em>TOC file</em> is a special Markdown file used to generate the table
+of contents for each channel.
+EBT-Site will automatically update the channel table of contents whenever
+you make a change to your wiki.</p>
+<p>When you create a new channel, be sure to add a <code>toc.md</code> file!</p>
+<h3>Hidden channels</h3>
+<p>It's sometimes convenient to hide a channel while you're working on it.
+To hide a channel from its parent TOC, just remove or rename the <code>toc.md</code> file
+of that channel.</p>
+<p>Thu Jul 13 08:15:40 AM PDT 2023</p>
 </article>
