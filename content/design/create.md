@@ -1,6 +1,6 @@
 ---
-title: Welcome to ${appName}
-description: Site template for EBT-Vue3 applications
+title: Create a new ${appName}
+description: Copy this template to create your own EBT Site
 img: pexels-philippe-donn-1133957.png
 img-alt: Hummingbird reaching to drink nectar from flowers
 category: 1. General
@@ -8,10 +8,6 @@ order: 1
 ---
 
 ## Overview
-
-This is the site template for 
-[EBT-Vue3](https://ebt-site.github.io/ebt-vue3) 
-applications.
 
 To create your own EBT-Vue3 website, you'll need a
 [Github account](ihttps://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account) (Note: a free account is fine).
