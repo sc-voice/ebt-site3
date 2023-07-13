@@ -1,13 +1,13 @@
 {
   "name": "ebt-site3",
-  "version": "1.45.1",
+  "version": "1.50.0",
   "description": "Site template for EBT-Vue3 applications",
   "main": "src/index.mjs",
   "private": false,
   "dependencies": {
-    "ebt-vue3": "^1.252.0",
+    "ebt-vue3": "^1.266.0",
     "vue": "^3.2.37",
-    "vuetify": "^3.3.7",
+    "vuetify": "^3.3.8",
     "webfontloader": "^1.0.0"
   },
   "devDependencies": {
@@ -45,6 +45,6 @@
     "Voice"
   ],
   "author": "Karl Lew",
-  "homepage": "https://github.com/ebt-site/ebt-site3",
+  "homepage": "https://github.com/sc-voice/ebt-site3",
   "license": "MIT"
 }
