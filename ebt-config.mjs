@@ -5,6 +5,7 @@ const EbtConfig = {
   "content": {
     "index": "toc",
   },
+  "monolingual": false,
   "github": {
     "account": "sc-voice",
     "repository": "ebt-site3"
