@@ -5,7 +5,7 @@
   "main": "src/index.mjs",
   "private": false,
   "dependencies": {
-    "ebt-vue3": "^1.278.2",
+    "ebt-vue3": "^1.288.0",
     "vue": "^3.2.37",
     "vuetify": "^3.3.9",
     "webfontloader": "^1.0.0"
@@ -31,7 +31,7 @@
     "preview": "vite preview",
     "vite": "vite",
     "vite:build": "vite build",
-    "push-action": "scripts/push-action",
+    "push-action": "node_modules/ebt-vue3/scripts/app-push-action.sh",
     "schedule-action": "node_modules/ebt-vue3/scripts/app-schedule-action.sh"
   },
   "repository": {
