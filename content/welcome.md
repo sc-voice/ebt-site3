@@ -15,4 +15,4 @@ and translated on [SuttaCentral](https://suttacentral.net).
 * See other [EBT-Sites](https://ebt-site.github.io/ebt-vue3/#/wiki/sites/toc)
 * Create a [custom EBT-Site](#/wiki/design/create)
 
-Sat Jul 22 06:00:23 AM PDT 2023
+Wed Jul 26 11:15:12 AM PDT 2023
