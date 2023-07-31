@@ -5,6 +5,7 @@ const EbtConfig = {
   "content": {
     "index": "toc",
   },
+  "privacyLink": "#/wiki/privacy",
   "monolingual": false,
   "github": {
     "account": "sc-voice",
