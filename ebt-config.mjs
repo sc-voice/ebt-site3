@@ -5,6 +5,7 @@ const EbtConfig = {
   "content": {
     "index": "toc",
   },
+  "footnotes": "Footnotes",
   "privacyLink": "#/wiki/privacy",
   "monolingual": false,
   "github": {
