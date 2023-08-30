@@ -28,7 +28,8 @@ you'll be getting an
 such as **sc-voice.net**.
 
 Once you have a custom domain name,
-you'll need to attach it to your Github account.
+you'll need to attach it to your Github account and/or repository.
+If you don't need any sub-domains, skip this section and set up the repository.
 
 * Navigate to your Github account (not the repository!)
 * Open ```Settings```
