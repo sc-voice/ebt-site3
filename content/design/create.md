@@ -12,6 +12,13 @@ order: 1
 To create your own EBT-Vue3 website, you'll need a
 [Github account](ihttps://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account) (Note: a free account is fine).
 
+Once you have a Github account, 
+we also highly recommend that you create an 
+[organizational account](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/creating-a-new-organization-from-scratch)
+for your new EBT-Site.
+An organizational account will help you work with others
+on content creation.
+
 ### Create new repository
 
 1. Navigate to [sc-voice on Github](https://github.com/sc-voice/ebt-site3)
