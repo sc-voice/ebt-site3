@@ -32,7 +32,12 @@ Then select <kbd>General</kbd> and scroll down to
 _Workflow Permissions_.
 Update workflow permissions as follows:
 
-<img src="https://ebt-site.sc-voice.net/img/account-settings.png" />
+<a href="https://ebt-site.sc-voice.net/img/account-settings.png">
+  <img height="50%"
+    src="https://ebt-site.sc-voice.net/img/account-settings.png" />
+</a>
+
+Click <kbd>Save</kbd> to update your workflow permissions.
 
 ### Create new repository
 
@@ -66,6 +71,14 @@ Configure the ```Build and deployment``` settings as shown below:
 <img src="https://ebt-site.sc-voice.net/img/github-pages.png" style="width:35em">
 </img>
 </a>. 
+
+Also verify that your repository has the following settings for
+<kbd>Actions</kbd> <kbd>General</kbd>:
+
+<a href="https://ebt-site.sc-voice.net/img/account-settings.png">
+  <img height="50%"
+    src="https://ebt-site.sc-voice.net/img/account-settings.png" />
+</a>
 
 Next, you'll need to edit the EBT-Site configuration.
 You won't be able to view your new website until you have configured it correctly.
