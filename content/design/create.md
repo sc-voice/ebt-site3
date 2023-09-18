@@ -12,12 +12,27 @@ order: 1
 To create your own EBT-Vue3 website, you'll need a
 [Github account](ihttps://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account) (Note: a free account is fine).
 
-Once you have a Github account, 
-we also highly recommend that you create an 
+### Create an Organizational Account
+
+Websites are normally collaborative, 
+so your EBT-Site will need a Github
 [organizational account](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/creating-a-new-organization-from-scratch)
 for your new EBT-Site.
 An organizational account will help you work with others
 on content creation.
+
+### Account Settings
+
+EBT-Sites rely on 
+[Github Actions](https://github.com/features/actions)
+for updating content and software.
+Navigate to your Github account and click <kbd>Settings</kbd>
+In the left navbar, open the <kbd>Actions</kbd> panel.
+Then select <kbd>General</kbd> and scroll down to 
+_Workflow Permissions_.
+Update workflow permissions as follows:
+
+<img src="https://ebt-site.sc-voice.net/img/account-settings.png" />
 
 ### Create new repository
 
