@@ -33,7 +33,7 @@ _Workflow Permissions_.
 Update workflow permissions as follows:
 
 <a href="https://ebt-site.sc-voice.net/img/account-settings.png">
-  <img height="50%"
+  <img style="height: 50%"
     src="https://ebt-site.sc-voice.net/img/account-settings.png" />
 </a>
 
@@ -76,7 +76,7 @@ Also verify that your repository has the following settings for
 <kbd>Actions</kbd> <kbd>General</kbd>:
 
 <a href="https://ebt-site.sc-voice.net/img/account-settings.png">
-  <img height="50%"
+  <img style="height: 50%"
     src="https://ebt-site.sc-voice.net/img/account-settings.png" />
 </a>
 
