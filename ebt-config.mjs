@@ -2,6 +2,7 @@ const EbtConfig = {
   "appName": "EBT-Site",
   "basePath": "/",
   "homePath": "#/wiki/welcome",
+  "tutorialPath": "#/wiki/tutorial/tutorial",
   "content": {
     "index": "toc",
   },
