@@ -3,7 +3,7 @@ title: Tutorial
 description: Learn how to use ${appName}
 img: tutorial.png
 img-alt: Tutorial
-category: 1. General
+category: Tutorial
 order: 1
 ---
 
