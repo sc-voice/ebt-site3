@@ -4,7 +4,7 @@ description: Information required by law
 img: jason-dent-JFk0dVyvdvw-unsplash.png
 link: https://unsplash.com/photos/JFk0dVyvdvw
 img-alt: Privacy please
-category: 1. Overview
+category: 2. Other information
 order: 9999
 ---
 
