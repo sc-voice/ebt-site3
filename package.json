@@ -5,13 +5,13 @@
   "main": "src/index.mjs",
   "private": false,
   "dependencies": {
-    "ebt-vue3": "^1.460.0",
+    "ebt-vue3": "^1.462.0",
     "vue": "^3.4.21",
-    "vuetify": "^3.5.10",
+    "vuetify": "^3.5.11",
     "webfontloader": "^1.0.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^4.6.2",
+    "@vitejs/plugin-vue": "^5.0.4",
     "cmark-gfm": "^0.9.0",
     "esm": "^3.2.25",
     "json": "^11.0.0",
