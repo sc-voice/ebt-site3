@@ -10,8 +10,7 @@ set -e
 git pull
 echo -e "${SCRIPT}: updating dependencies..."
 npm install --save \
-  ebt-vue3@latest \
-  vuetify@latest
+  ebt-vue3@latest 
 
 CMD="git status | grep 'nothing to commit' > /dev/null"
 if bash -c "$CMD"; then
