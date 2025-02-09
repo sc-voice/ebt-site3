@@ -24,13 +24,18 @@ using browser storage:
 
 ### Licences
 
-**EBT-Site software**  
+**SC-Voice.net software**  
 ${appName} application software is provided under the
 [MIT License](https://github.com/sc-voice/sc-voice_net/blob/main/LICENSE).
 
-EBT-Site application software is provided under the
-[MIT License](https://github.com/sc-voice/sc-voice_net/blob/main/LICENSE).
-
 **SuttaCentral content**  
-All Dhamma content provided on EBT-Sites is 
+Dhamma content provided by SuttaCentral is
 [licensed by SuttaCentral](https://suttacentral.net/licensing).
+
+**Digital Pali Dictionary**
+Digital Pali Dictionary Content is [licensed by DPD](https://digitalpalidictionary.github.io/titlepage.html)
+
+**Other Dhamma content**
+License(s) for other Dhamma content are provided on a page-by-page basis.
+
+

@@ -5,6 +5,7 @@ img: tutorial.png
 img-alt: Tutorial
 category: Tutorial
 order: 1
+warning: This file is required by the software and can be translated as required.
 ---
 
 ${appName} lets you read and hear Early Buddhist Text (EBT) 
