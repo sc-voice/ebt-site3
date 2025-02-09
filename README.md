@@ -2,7 +2,7 @@
 
 This is the repository template for SC-Voice.net language-specific websites.
 
-[View template web site](https://ebt-site.github.com/ebt-site3)
+[View template web site](https://ebt-site.sc-voice.net)
 
 ## Instructions
 
