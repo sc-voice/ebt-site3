@@ -1,0 +1,153 @@
+
+#!/usr/bin/bash
+SCRIPT=`basename $0`
+DIRNAME=`dirname $0`
+
+node - <<'JS' $DIRNAME $SCRIPT $*
+/////////// JAVASCRIPT BEGIN /////////////
+const fs = require('node:fs');
+const path = require('node:path');
+const util = require('util');
+const exec = util.promisify(require('child_process').exec);
+let [ NODE, DASH, DIRNAME, SCRIPT, ...args] = process.argv;
+
+const msg = `${SCRIPT}:`;
+
+function help(text) {
+  console.error(`
+NAME
+  ${SCRIPT} - Translate wiki page
+
+SYNOPSIS
+  ${SCRIPT} [OPTIONS] MARKDOWN_FILE_PATH
+
+DESCRIPTION
+  Translate the Github Wiki Markdown at the given file path
+
+  -?, --help
+    print this help text
+
+  -l, --lang LANG
+    Two letter language code (required)
+
+  -v, --verbose
+    print more information to stderr
+
+EXAMPLES
+  scripts/${SCRIPT} -l ru content/tutorial.md
+`);
+
+  text && console.error(msg, text);
+  process.exit(0);
+}
+
+let dbg = 0;
+let dstLang;
+let DeepLAdapter;
+let TOOLS;
+let NODE_TOOLS;
+let appName;
+
+
+async function translateLines(lines) {
+  const msg = `${SCRIPT}.translateLines:`;
+  const AUTH_PATH = path.join(DIRNAME, '../local/deepl.auth');
+  const AUTH_KEY = fs.readFileSync(AUTH_PATH).toString().trim();
+  let dbg = 0;
+  let { DeepLAdapter } = NODE_TOOLS.Translate;
+  let { Logger } = TOOLS.Text;
+  let logger = new Logger();
+  let authKey = AUTH_KEY;
+  let dla = await DeepLAdapter.create({authKey, dstLang, logger});
+  await dla.memoize();
+
+  dbg && console.error(msg, dstLang);
+  
+  let limit = undefined;
+  let srcLines = lines.slice(0,limit);
+  let dstLines = [];
+  for (let i = 0; i < srcLines.length; i++) {
+    let src = srcLines[i];
+    dbg && console.error(src);
+    let [ dst ] = await dla.translate([src]);
+    dst = dst.replaceAll('${appName}', appName);
+    console.log(dst);
+  }
+}
+
+async function main() {
+  const msg = `${SCRIPT}.main:`;
+  let mdpath;
+  TOOLS = await import('@sc-voice/tools');
+  NODE_TOOLS = await import('@sc-voice/node-tools');
+  let cfgMod = (await import('./ebt-config.mjs'));
+  let ebtConfig = cfgMod.default;
+  dstLang = ebtConfig.monolingual;
+  appName = ebtConfig.appName;
+
+  for (let i = 0; i < args.length; i++) {
+    let arg = args[i];
+    switch (arg) {
+      case '-?':
+      case '--help':
+        help();
+        break;
+      case "--lang":
+      case "-l":
+        dstLang = args[++i];
+        break;
+      case "--verbose":
+      case "-v":
+        dbg = 1;
+        break;
+      default:
+        if (arg.at(0) === "-") {
+          console.error(`${msg} [ERROR] ignoring ${arg}`);
+        } else {
+          mdpath = arg;
+        }
+        break;
+    }
+  }
+  if (mdpath == null) {
+    help('mdpath?');
+  }
+  if (dstLang == null) {
+    help('dstLang?');
+  }
+  if (!fs.existsSync(mdpath)) {
+    throw new Error(`${msg} mdpath? ${mdpath}`);
+  }
+
+  dbg && console.error(msg, {
+    DIRNAME, SCRIPT, dstLang, verbose:dbg, mdpath
+  });
+
+  let buf = await fs.readFileSync(mdpath);
+  let lines = buf.toString().split('\n');
+
+  let headerEnd = lines.findLastIndex(line=>/^---$/.test(line));
+  let header;
+  let body;
+  if (headerEnd >= 0) {
+    header = lines.slice(0, headerEnd+1);
+    body = lines.slice(headerEnd+1);
+  } else {
+    header = [];
+    body = lines;
+  }
+  dbg && console.log(msg, {header, body});
+  if (header) {
+    header.forEach(line=>console.log(line));
+  }
+  translateLines(body);
+} // main
+(async function() {
+  try {
+    await main();
+  } catch(e) {
+    console.error(msg, e);
+  }
+})()
+
+JS
