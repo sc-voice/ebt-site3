@@ -45,9 +45,9 @@ Then select <kbd>General</kbd> and scroll down to
 _Workflow Permissions_.
 Update workflow permissions as follows:
 
-<a href="https://ebt-site.sc-voice.net/img/account-settings.png">
+<a href="https://raw.githubusercontent.com/sc-voice/ebt-site3/refs/heads/main/public/img/account-settings.png">
   <img style="height: 50%"
-    src="https://ebt-site.sc-voice.net/img/account-settings.png" />
+    src="https://raw.githubusercontent.com/sc-voice/ebt-site3/refs/heads/main/public/img/account-settings.png" />
 </a>
 
 Click <kbd>Save</kbd> to update your workflow permissions.
