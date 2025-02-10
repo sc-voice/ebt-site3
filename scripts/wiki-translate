@@ -47,20 +47,25 @@ let DeepLAdapter;
 let TOOLS;
 let NODE_TOOLS;
 let appName;
+let dla;
 
 
-async function translateLines(lines) {
-  const msg = `${SCRIPT}.translateLines:`;
+async function createDeepLAdapter() {
   const AUTH_PATH = path.join(DIRNAME, '../local/deepl.auth');
   const AUTH_KEY = fs.readFileSync(AUTH_PATH).toString().trim();
-  let dbg = 0;
   let { DeepLAdapter } = NODE_TOOLS.Translate;
   let { Logger } = TOOLS.Text;
   let logger = new Logger();
   let authKey = AUTH_KEY;
-  let dla = await DeepLAdapter.create({authKey, dstLang, logger});
+  dla = await DeepLAdapter.create({authKey, dstLang, logger});
   await dla.memoize();
 
+  return dla;
+}
+
+async function translateLines(lines) {
+  const msg = `${SCRIPT}.translateLines:`;
+  let dbg = 0;
   dbg && console.error(msg, dstLang);
   
   let limit = undefined;
@@ -84,6 +89,7 @@ async function main() {
   let ebtConfig = cfgMod.default;
   dstLang = ebtConfig.monolingual;
   appName = ebtConfig.appName;
+  dla = await createDeepLAdapter();
 
   for (let i = 0; i < args.length; i++) {
     let arg = args[i];
@@ -130,7 +136,22 @@ async function main() {
   let header;
   let body;
   if (headerEnd >= 0) {
+    let translateHeader = async (hdr,line)=>{
+      let result = line;
+      if (line.startsWith(hdr)) {
+        let texts = line.split(hdr);
+        texts = await dla.translate(texts);
+        result = texts.join(hdr);
+      }
+      return result;
+    }
     header = lines.slice(0, headerEnd+1);
+    for (let i = 0; i < header.length; i++) {
+      header[i] = await translateHeader('category:', header[i]);
+      header[i] = await translateHeader('title:', header[i]);
+      header[i] = await translateHeader('description:', header[i]);
+      header[i] = await translateHeader('img-alt:', header[i]);
+    }
     body = lines.slice(headerEnd+1);
   } else {
     header = [];
