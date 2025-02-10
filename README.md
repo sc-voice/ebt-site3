@@ -1,8 +1,16 @@
 # EBT-Site3
 
-This is the repository template for SC-Voice.net language-specific websites.
+This is the template repository for 
+SC-Voice.net language-specific websites
+such as:
 
-[View template web site](https://ebt-site.sc-voice.net)
+* [ebt-site.sc-voice.net](https://ebt-site.sc-voice.net): the sample website for this template repository.
+* [sc-voice.net](httsp://sc-voice.net): multilinguaal SC-Voice.net
+* [Dhammarage.net](httsp://dhammaregen.net): DE SC-Voice.net
+* [es.sc-voice.net](httsp://es.sc-voice.net): ES SC-Voice.net
+* [fr.sc-voice.net](httsp://fr.sc-voice.net): FR SC-Voice.net
+* [pt.sc-voice.net](httsp://pt.sc-voice.net): PT SC-Voice.net
+* [ru.sc-voice.net](httsp://ru.sc-voice.net): RU SC-Voice.net
 
 ## Instructions
 
@@ -11,7 +19,10 @@ This is the repository template for SC-Voice.net language-specific websites.
 To create a language-specific ${appName} website, you'll need a
 [Github account](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account) (Note: a free account is fine).
 Your Github account will own and administer the new website.
-The new website will share the SC-Voice.net API servers with other websites.
+Although your new website will share the 
+SC-Voice.net API servers with other websites,
+the new website will also have its own content
+intended for a specific language community.
 
 ### Create an Organizational Account
 
@@ -19,7 +30,9 @@ For collaborative administration,
 you new website will need a Github
 [organizational account](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/creating-a-new-organization-from-scratch).
 An organizational account will help you work with others
-on content creation.
+on content creation within your language community.
+Most SC-Voice.net websites are part of the SC-Voice organization.
+You can also create your own organization (e.g., Dhammaregen).
 
 ### Account Settings
 
@@ -52,7 +65,8 @@ button, and choose <kbd>Create new repository</kbd>.
 After clicking <kbd>Create new repository</kbd>,
 you'll see a new webpage form for you to fill out:
 
-1. Specify the new repository name (e.g., "my-ebt-site")
+1. Specify the organizational account (e.g., "sc-voice")
+1. Specify the new repository name (e.g., "ru_sc-voice_net")
 1. Choose <kbd>Public</kbd> repository (free)
 1. Select <kbd>Include all branches</kbd>
 1. Review your form entries
